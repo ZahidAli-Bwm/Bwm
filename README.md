@@ -5,4 +5,4 @@
 ```
 window.alert('This is a Alert box');
 ```
-![Zahid](https://user-images.githubusercontent.com/95132389/143727745-f547c21c-7382-4ba4-a390-c893e0946d84.jpg)
+![man-with-pointer-flat-design-vector-13247600](https://user-images.githubusercontent.com/95132389/143728853-5514b0f9-08a9-495e-b291-a7c1cc19c9bb.jpg)
