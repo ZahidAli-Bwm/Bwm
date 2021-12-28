@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body onload="demo()">
+<p></p>
+<script>
+var demo=()=>{
+var studentInfo=[
+{name:"Zahid Ali",Collage:"SSPI Azamgarh",age:23,branch:"CS"},
+{name:"nadeem",Collage:"SSPI Azamgarh",age:21,branch:"CS year 3th"},
+{name:"Asfak ansari",Collage:"SSPI Azamgarh",age:19,branch:"IT"},
+{name:"meenu",Collage:"SSPI Azamgarh",age:23,branch:"ME"},
+{name:"Zahid Ali",Collage:"SSPI Azamgarh",age:23,branch:"CS"},
+]
+var tb="<table border='2' cellpadding='10px'><tr><th>name</th><th>Collage</th><th>age</th><th>branch</th></tr>"
+var ddl="<select><option>---select option---</option>";
+for(var x of studentInfo)
+{
+tb+="<tr><td>"+x.name+"</td><td>"+x.Collage+"</td><td>"+x.age+"</td><td>"+x.branch+"</td></tr>";
+ddl+="<option>"+x.name+"</option>"
+//alert(studentInfo[x].branch)
+}
+tb+="</table>";
+ddl+="</select>"
+document.querySelector("p").innerHTML=tb+ddl;
+}
+
+</script>
+</body>
+</html>

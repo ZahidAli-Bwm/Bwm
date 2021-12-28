@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<input type="Number" placeholder="Enter Pin No..." id="txt" onkeypress="demo()">
+<b id="msg" onkeypress="demo()">Pin Code</b><br><br>
+
+<script>
+function demo()
+{
+var msg=document.getElementById("msg")
+var i=document.getElementById("txt")
+var v=i.value;
+if(v.length==6)
+{
+msg.innerText="Valid Pin Number";
+msg.style.color="green";
+i.style.border="2px solid green";
+}
+else
+{
+msg.innerText="invalid Pin Number";
+msg.style.color="red";
+i.style.border="2px solid red";
+}
+}
+</script>
+</body>
+</html>

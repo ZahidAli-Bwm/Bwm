@@ -1,0 +1,28 @@
+<html>
+<head></Head>
+<body>
+<fieldset style="width:250px;">
+<legend> LOGIN FORM...</legend>
+USERNAME<br><input type="text" id="txt1"><br>
+PASSWORD<br><input type="Password" id="txt2"><br></br>
+<button onclick="demo()">Login</button>
+</fieldset>
+<script>
+function demo()
+{
+var user="Tachpile2102"
+var pass="Tachpile"
+var u=document.getElementById("txt1").value.trim();
+var p=document.getElementById("txt2").value.trim();
+if(user==u && pass==p)
+{
+alert("Walecome to the Dashboard")
+window.location="13-enomenusfunction.html";
+}
+else{
+alert("Invalid User & Pasword");
+}
+}
+</script>
+</body>Tachpile2102
+</html>

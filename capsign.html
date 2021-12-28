@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+<div id="box">
+<p id="msg"></p>
+Username<br><input type="text" id="user"><br>
+Password<br><input type="password" id="password"><br>
+Enamer Captcha Cose<br>
+<input type="text" id="text"><br>
+<s>A12Zze</s><img src="images/ref.png" onclick="demo()" height="25px;"><br>
+<button onclick="demo2()">LOGIN</button>
+<script>
+function demo(){
+var str="0123456789qwertyuiopasdfghjklzxcvbnm";
+var captcha="";
+for (var i=1;i<=6;i++)
+{
+var ri=Math.floot(Math.random()*str.length);
+captcha+=str.charAt(ri);
+}
+document.querySelector("s").textContent=captcha;
+}
+function demo2()
+{
+var user="TET202020"
+var password="Techpile@12"
+var v=document.getElementById("text").value;
+var v1=document.querySelector("s").innerText;
+var msg=document.getElementById("msg");
+var u=document.getElementById("user").value;
+var p=document.getElementById("password").value;
+if(v==v1)
+{
+if (user==u && password==p)
+{
+alert("welcome to the new page");
+window.location="13-enomenusfunction.html";
+} 
+else
+{
+msg.innerText="Invaid Username or password";
+msg.style.color="red";
+}
+}
+else
+{
+msg.innerText="Invalid chapcha";
+msg.style.color="red";
+}
+}
+</script>
+</div>
+</body> 
+</html>

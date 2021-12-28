@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+#dv{
+height:200px;
+width:300px;
+background:blue;
+color:white;
+line-height:200px;
+float:left;
+border:20px solid black;
+text-align:center;
+font-size:60px;
+}
+#dv1{
+height:200px;
+width:300px;
+background:red;
+color:white;
+line-height:200px;
+float:left;
+border:20px solid green;
+text-align:center;
+font-size:60px;
+}
+#dv2{
+height:200px;
+width:300px;
+background:blue;
+color:white;
+line-height:200px;
+float:left;
+border:20px solid pink;
+text-align:center;
+font-size:60px;
+}
+#dv3{
+height:200px;
+width:300px;
+background:green;
+color:white;
+line-height:200px;
+float:left;
+border:20px solid red;
+text-align:center;
+font-size:60px;
+}
+
+</style>
+</head>
+<body>
+<div id="dv">Zahid Ali</div>
+<div id="dv1">Asfak Anasari</div>
+<div id="dv2">Namdeem Anasari</div>
+<div id="dv3">Joohi</div><br>
+<button onclick="swap()">Start</button>
+<script>
+function swap(){
+var a=document.getElementById("dv");
+var a1=document.getElementById("dv1");
+var a2=document.getElementById("dv2");
+var a3=document.getElementById("dv3");
+var sum=a.innerText;
+var sum1=a1.innerText;
+var sum2=a2.innerText;
+var sum3=a3.innerText;
+a.innerText=sum3;
+a1.innerText=sum2;
+a2.innerText=sum1;
+a3.innerText=sum;
+
+}
+window.setInterval(swap,2000)
+</script>
+</body>
+</html>

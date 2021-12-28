@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<script>
+var studentInfo=[
+				{Name:"Shohan",Collage:"DCCD",age:23,branch:"CS"},
+				{Name:"Sona",Collage:"DHJH",age:18,branch:"EE"},
+				{Name:"ROHAN",Collage:"SASH",age:24,branch:"ME"},//Trailling Comma
+				]
+				/*document.write(`NAME: ${studentInfo[0].Name}<br/> COLLAGE :
+				${studentInfo[0].Collage}<br/> AGE :${studentInfo[0].age}<br>BRANCH :
+				${studentInfo[0].branch}`)*/
+				var res="<table border='2'><tr><th>NAME</th><th>COLLAGE</th><th>AGE</th><th>BRANCH</th></tr>"
+				for(var i=0;i<studentInfo.length;i++)
+				{
+				res=res+"<tr onclick='demo(this)'><td>"+studentInfo[i].Name+"</td><td>"+studentInfo[i].Collage+"</td><td>"+studentInfo[i].age+"</td><td>"+studentInfo[i].branch+"</td></tr>"
+				}
+				res+="</table>"
+				document.write(res);
+				var demo=(x)=>
+				{
+				var y=confirm("Are you sure want to hide?");
+				if(y==true)
+				x.style.display="none";
+				}
+</script>
+</body>
+</html>

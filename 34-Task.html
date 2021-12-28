@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<input type="text" onblur="demo()" id="txt" name="txt">
+<p></p>
+<script>
+function demo(){
+var name=obj.value;
+var arr=name.split("")
+var sname="";
+for(var i=0;i<arr.length-1;i++)
+{
+sname=sname+arr[i].charAt(0)+".";
+}
+sname+=arr[arr.length-1];
+document.querySelector("p").innerText=sname;
+ojb.value=sname;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+<input type="file"  onchange="demo(this)" id="file1">
+<p id="p1"></p>
+<script>
+function demo(x)
+{
+var path=x.value
+//alert(path);
+var s=path.substring(path.lastIndexOf('.')+1).toUpperCase();
+var a=document.getElementById("p1")
+if(s=="JPG" || s=="JPEG")
+{
+a.innerText="Valid File"
+a.style.color="green"
+}
+else
+{
+a.innerText="Invalid File"
+a.style.color="red"
+}
+
+
+//alert(s)
+}
+</script>
+</body>
+</html>

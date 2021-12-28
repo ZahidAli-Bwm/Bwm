@@ -1,0 +1,4 @@
+<script>
+var arr=["HTML","CSS","JS"]
+
+</script>

@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+onfocus<input type="text" onblur="demo2(this)" onfocus="demo1(this)" id="t1"><br>
+onblur<input type="text" id="t2"><br>
+<p></p>
+<script>
+function demo1(x)
+{
+x.style.border="2px solid red";
+document.querySelector("p").innerText=x.value;
+}
+function demo2(x){
+x.style.border="2px solid green";
+}
+</script>
+</body>
+</html>

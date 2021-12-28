@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.a{
+transform:rotate(90deg);
+color:red;
+background:yellow;
+transition:4s;
+}
+.b{
+transform:rotate(-50deg);
+color:yellow;
+background:red;
+transition:4s;
+}
+div{
+width:400px;
+height:200px;
+background:navy;
+color:white;
+border:10px solid red;
+text-align:center;
+font-size:20px;
+line-height:200px;
+float:left;
+transition:4s;
+}					
+</style>
+</head>
+<body>
+<div id="box1">WELCOME TO THE JAVASCRIPT</div>
+<div id="box2">WELCOME TO THE JAVASCRIPT</div>
+<button onclick="btn2()"> REMOVE</button>
+<button onclick="btn1()"> ADD</button>
+<button onclick="btn3()"> TOGGLE</button>
+<button onclick="btn4()"> CONTAIN</button>
+<script>
+function btn1()
+{
+document.querySelector("#box1").classList.add('a')
+document.querySelector("#box2").classList.add('b')
+}
+function btn2()
+{
+document.querySelector("#box1").classList.remove('a')
+document.querySelector("#box2").classList.remove('b')
+}
+function btn3()
+{
+document.querySelector("#box1").classList.toggle('a')
+document.querySelector("#box2").classList.toggle('b')
+}
+function btn4()
+{
+var c=document.querySelector("#box1").classList.contains('a')
+alert(c)
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+	<head>
+	<style>
+		.box{
+		height:300px;
+		width:300px;
+		color:white;
+		font-size:20px;
+		text-align:center;
+		line-height:300px;
+		float:left;
+		border:5px solid red;
+		}
+		</style>
+	</head>
+	<body onload="demo1()">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<script>
+			function demo1()
+			{
+				var chr="0123456789abcdef";
+				var color="#"
+				var color1="#"
+				var color2="#"
+				var color3="#"
+				for(var i=0;i<6;i++)
+				{
+					var rindex=Math.floor(Math.random()*chr.length);
+					var rindex1=Math.floor(Math.random()*chr.length);
+					var rindex2=Math.floor(Math.random()*chr.length);
+					var rindex3=Math.floor(Math.random()*chr.length);
+					color+=charAt(rindex);
+					color1+=charAt(rindex1);
+					color2+=charAt(rindex2);
+					color3+=charAt(rindex3);
+				}
+				document.querySelectorAll("box")[0].style.background=color;
+				document.querySelectorAll("box")[0].innerText=color;
+				document.querySelectorAll("box")[1].style.background=color1;
+				document.querySelectorAll("box")[1].innerText=color1;
+				document.querySelectorAll("box")[2].style.background=color2;
+				document.querySelectorAll("box")[2].innerText=color2;
+				document.querySelectorAll("box")[3].style.background=color3;
+				document.querySelectorAll("box")[3].innerText=color3;
+			}
+		</script>
+	</body>
+</html>

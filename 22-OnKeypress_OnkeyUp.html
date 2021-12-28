@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<input type="Number" PLACEHOLDER="Enter Your Mobile No..." id="txt">
+<b id="msg">Massege</b><br><br>
+<button onkeypress="demo()">CLICK</button>
+<script>
+function demo()
+{
+var msg=document.getElementById("msg")
+var i=document.getElementById("txt")
+var v=i.value;
+if((v.charAt(0)=="9" || v.charAt(0)=="8"|| v.charAt(0)=="7"|| v.charAt(0)=="6")&& v.length==10)
+{
+msg.innerText="Valid Mobile Number";
+msg.style.color="green";
+i.style.border="2px solid green";
+}
+else
+{
+msg.innerText="invalid Mobile Number";
+msg.style.color="red";
+i.style.border="2px solid red";
+}
+}
+</script>
+</body>
+</html>

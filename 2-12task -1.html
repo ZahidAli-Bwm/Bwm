@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+<p id="s"></p>
+<input type="text" id="txt">
+<script>
+var courseList=["HELLO","HI","MY","YOU","YOUR"];
+var res="<select onchange='demo(this)'>"
+courseList.forEach(function(x){
+res=res+"<option>"+x+"</option>"
+})
+res+="</select>"
+document.getElementById("s").innerHTML=res;
+function demo(y)
+{
+var t=document.getElementById("txt")
+if(y.value=="HELLO")
+t.value="5000"
+if(y.value=="YOU")
+t.value="3000"
+if(y.value=="HI")
+t.value="2000"
+if(y.value=="MY")
+t.value="10000"
+if(y.value=="YOUR")
+t.value="2300"
+}
+</script>
+</body>
+</html>

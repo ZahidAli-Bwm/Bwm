@@ -1,0 +1,21 @@
+<html>
+	<head></head>
+	<body>
+	<input type="text" onblur="demo()" id="txt" name="txt">
+	<p></p>
+	<script>
+	function demo(){
+	var obj=document.getElementById("txt");
+	var name=obj.value;
+	var arr=name.split(" ")
+	var cname="";
+	for (var x of arr){
+	cname+=x.charAt(0).toUpperCase()+x.substring(1).toLowerCase()+" ";
+	
+	}
+	document.querySelector("p").innerText=cname;
+	obj.value=cname;
+	}
+	</script>
+	</body>
+</html>

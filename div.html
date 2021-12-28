@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+<img src="images/cdsf.jpg" ondblclick="im()" id="img"height="400px" />
+<div id="box" ></div>
+<script>
+function im()
+{
+var a=document.getElementById("img").src
+var b=document.getElementById("box")
+var sum=a.src
+a.src=b.innerHTML
+document.write(sum)
+
+}
+</script>
+</body>
+</html>

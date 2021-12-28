@@ -1,0 +1,58 @@
+
+<html>
+<head>
+<style>
+#box{
+height:300px;
+width:300px;
+border:3px solid black;
+padding:30px;
+box-sizing:border-box;
+}
+#box1{
+height:100px;
+width:200px;
+border:2px solid black;
+margin-top:20px;
+}
+#box2{
+height:50px;
+width:200px;
+border:2px solid black;
+}
+</style>
+</head>
+<body onload="demo()">
+<div id="box">
+<center>
+<div id="box1"></div><br/>
+<div id="box2"></div><br/><br/>
+<button onclick="demo1()">Submit</button>
+</center>
+</div></div>
+<script>
+function demo(){
+var str="0123456789abcdf";
+var color="#"
+for(var i=0;i<6;i++)
+{
+var rindex=Math.floor(Math.random()*str.length)
+//ba+=s.charAt(ri);
+color+=str[rindex];
+
+}
+document.getElementById("box1").style.background=color;
+document.getElementById("box2").innerText=color;
+}
+window.setInterval(demo,1000);
+function demo1()
+{
+var dv=document.getElementById("box");
+var color=document.getElementById("box2").innerText;
+dv.style.background=color;
+
+}
+
+</script>
+</body>
+</html>

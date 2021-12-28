@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+#imc{
+height:200px;
+width:300px;
+border:10px solid black;
+padding:10px;
+margin-left:400px;
+}
+.img1{
+height:100px;
+width:150px;
+border:10px solid black;
+margin:10px;
+padding:5px;
+float:left;
+}
+</style>
+</head>
+<body>
+<img src="images/a (3).jpg" id="imc"><br><br>
+<img src="images/a (4).jpg" onclick="btn(this)" class="img1">
+<img src="images/a (5).jpg" onclick="btn(this)" class="img1">
+<img src="images/a (6).jpg" onclick="btn(this)" class="img1">
+<img src="images/a (7).jpg" onclick="btn(this)" class="img1">
+<img src="images/a (8).jpg" onclick="btn(this)" class="img1">
+<script>
+function btn(x){
+var im=document.getElementById("imc")
+im.src=x.src
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>					
+</style>
+</head>
+<body>
+<img src="pa (1).jpg"/ height="300px">
+<button onclick="btn4()">GET ATTR</button>
+<button onclick="btn5()">SET ATTR</button>
+<script>
+function btn4()
+{
+var im=document.querySelector("img")
+alert(im.getAttribute("src"))
+alert(im.getAttribute("height"))
+}
+function btn5()
+{
+document.querySelector("img").setAttribute("src","pa (1)");
+document.querySelector("img").setAttribute("height","350px");
+
+}
+</script>
+</body>
+</html>
